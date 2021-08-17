@@ -30,7 +30,7 @@ Now in order to track it , we can use git add.
 git add - 
 it serves 2 purpose.
 -> if files were being tracked , they are sent in staging area.
--> if files were untracked , they are now being tracked.
+-> if files were untracked , they are now being tracked (file directly comes in staging area as usual) .
 
 -> git add . (all files)
 -> git add fileName (particular file)
@@ -40,3 +40,9 @@ git add fileName -> git starts tracking file
 git status -> check status of file
 
 git commit -m "message_here"
+
+if a file is changed after staging it , 2 versions of file are created.
+version1 is staged , version2 is modified.
+Now if we commit , the version1 file gets committed.
+version2 is still modified. we are asked by git to stage this version.
+So we add this version in staging area and commit it at our convinience.
