@@ -46,3 +46,12 @@ version1 is staged , version2 is modified.
 Now if we commit , the version1 file gets committed.
 version2 is still modified. we are asked by git to stage this version.
 So we add this version in staging area and commit it at our convinience.
+
+if we had added the version2 , it comes in staging area.
+But now since we had not saved version1 , it gets overwritten by version2 and now we have lost version1.
+Now we can commit version2.
+
+
+.gitignore 
+-> files added in gitIgnore are not tracked by git.
+-> these files are not pushed onto master repo as well.
