@@ -4,9 +4,9 @@
 compares them to find if any changes are made.
 
 In git , file is in 3 states - 
--> modified
--> staged
--> committed
+-> modified - after doing git init , when we make changes in file it becomes modified
+-> staged - after doing git add , file comes in staging area.
+-> committed - after commiting file , it becomes unmodified again. Now if we make changes, it becomes modified and process is repeated.
 
 Initially file is in working directory.
 when  we do git add , file comes in staging area.
@@ -22,10 +22,16 @@ Git commands -
 git config --global user.email yourEmail  (set your user email in system)
 git config --global user.name yourName    (set your user name in system)
 
-git init -> git initialize (git starts recording changes)
+git init -> git initialize (git starts recording changes in files created before )
 .git file is created in folder ( this is local repo )
+After doing git init , if we create an new file , it is untracked (any file in dir which was not in last commit and is not in staging area is called untracked) .
+Now in order to track it , we can use git add.
 
 git add - 
+it serves 2 purpose.
+-> if files were being tracked , they are sent in staging area.
+-> if files were untracked , they are now being tracked.
+
 -> git add . (all files)
 -> git add fileName (particular file)
 -> git add fileName1 fileName2 .. (many files)
