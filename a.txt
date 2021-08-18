@@ -55,3 +55,8 @@ Now we can commit version2.
 .gitignore 
 -> files added in gitIgnore are not tracked by git.
 -> these files are not pushed onto master repo as well.
+
+commands for pushing rep for first time
+-> git branch -M main
+-> git remote add origin https://github.com/CSguy183/Lets_Learn_Git.git
+-> git push -u origin main
