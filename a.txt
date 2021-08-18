@@ -60,3 +60,5 @@ commands for pushing rep for first time
 -> git branch -M main
 -> git remote add origin https://github.com/CSguy183/Lets_Learn_Git.git
 -> git push -u origin main
+
+Having done this, just add , commit and push file onto github.
